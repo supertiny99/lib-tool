@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>test</title>
+    <script type="text/javascript" src="EventUtil.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var btn = document.getElementById('btn');
+            EventUtil.addHandler(btn, 'click', show);
+            // EventUtil.removeHandler(btn, 'click', show);
+            function show() {
+                alert('why click!');
+            }
+        };
+    </script>
+</head>
+<body>
+    <button id="btn">click me!</button>
+</body>
+</html>
